@@ -848,7 +848,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 	ds = document.Stats;
 	RacetoCheck = parseInt(ds.DesiredCharRace.value);
 	// Get all options within <select id='DesiredCharClass'>...</select>
-	var op = document.getElementById("DesiredCharClass").getElementsByTagName("option");
+	var optionSet = document.getElementById("DesiredCharClass").getElementsByTagName("option");
 	switch(RacetoCheck) {
 		case Human:
 			// code block
@@ -876,69 +876,70 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			*/
 			alert(RacetoCheck);
 			for (var i = 0; i < op.length; i++) {
-				switch(op[i].value) {
+				switch(optionSet[i].value) {
 				case Cavalier:  
-					op[i].disabled = true;
+				optionSet[i].value =+ "Ted was here";
+				optionSet[i].disabled = true;
 				case Paladin:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Cleric:  
-					op[i].disabled = false;
+					optionSet[i].disabled = false;
 				case ClericFighter:  
-					op[i].disabled = false;
+					optionSet[i].disabled = false;
 				case ClericRanger:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case ClericMagicuser:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case ClericIllusionist:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case ClericThief:  
-					op[i].disabled = false;
+					optionSet[i].disabled = false;
 				case ClericAssassin:  
-					op[i].disabled = false;
+					optionSet[i].disabled = false;
 				case Druid:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case DruidFighter:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case DruidRanger:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case DruidMagicuser:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case DruidThief:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Bard:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Fighter:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case FighterMagicuser:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case FighterIllusionist:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case FighterThief:  
-					op[i].disabled = false;
+					optionSet[i].disabled = false;
 				case FighterAssassin:  
-					op[i].disabled = false;
+					optionSet[i].disabled = false;
 				case Barbarian:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Ranger:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case MagicUser:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case MagicuserThief:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case MagicuserAssassin:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Illusionist:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case IllusionistThief:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case IllusionistAssassin:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Thief:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Assassin:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				case Monk:  
-					op[i].disabled = true;
+					optionSet[i].disabled = true;
 				default:
 					// code block
 				}
