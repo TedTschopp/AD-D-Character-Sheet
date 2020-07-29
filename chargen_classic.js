@@ -875,7 +875,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			fa	1	
 			*/
 			for (var i = 0; i < optionSet.length; i++) {
-				switch(optionSet[i].value) {
+				switch(parseInt(optionSet[i].value)) {
 				case Cavalier:
 					alert(i+" = " + optionSet[i].value);
 					document.getElementById("DesiredCharClass")[i].value += "Ted was here";
