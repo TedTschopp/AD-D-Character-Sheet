@@ -86,6 +86,7 @@ HalflingStout = 4.1;
 HalflingHairfoot = 4.2;
 HalflingTallfellow = 4.3;
 GnomeDeep = 5.1;
+GnomeSurface = 5.2;
 HalfElfDark = 6.1;
 HalfElfGrey = 6.2;
 HalfElfHigh = 6.3;
