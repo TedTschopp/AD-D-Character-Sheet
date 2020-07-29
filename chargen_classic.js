@@ -852,13 +852,12 @@ fmt = 36, FighterMagicuserThief    = fmt;
 	*/
 ds = document.Stats;
 desiredCharRace = ds.DesiredCharRace.value;
-alert(desiredCharRace)
-
 // Get all options within <select id='DesiredCharClass'>...</select>
 var op = document.getElementById("DesiredCharClass").getElementsByTagName("option");
 
-/*
 
+
+/*
 		for (var i = 0; i < op.length; i++) {
 			if (op[i].value == Cavalier) {
 				op[i].disabled = true;
@@ -1019,7 +1018,6 @@ var op = document.getElementById("DesiredCharClass").getElementsByTagName("optio
 				op[i].disabled = true;
 			}
 		}
-
 */
 
 switch(desiredCharRace) {
@@ -1043,16 +1041,18 @@ switch(desiredCharRace) {
 	break;
 	case HalfOrc:
 		/* Classes for Half Orc
-		cleric
-		fighter
-		theif
-		assassin
+		Cleric
+		Fighter
+		Thief
+		Assassin
 		cf	1	
 		ct	1	
 		ca	1	
 		ft	1	
 		fa	1	
 		*/
+		alert(desiredCharRace);
+
 
 		for (var i = 0; i < op.length; i++) {
 			if (op[i].value == Cavalier) {
