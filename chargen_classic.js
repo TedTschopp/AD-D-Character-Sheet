@@ -1057,96 +1057,127 @@ switch(desiredCharRace) {
 				alert(op[i].value);
 				op[i].disabled = true;
 			}
+			break;
 			case Paladin:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Cleric:  {
 				op[i].disabled = false;
 			}
+			break;
 			case ClericFighter:  {
 				op[i].disabled = false;
 			}
+			break;
 			case ClericRanger:  {
 				op[i].disabled = true;
 			}
+			break;
 			case ClericMagicuser:  {
 				op[i].disabled = true;
 			}
+			break;
 			case ClericIllusionist:  {
 				op[i].disabled = true;
 			}
+			break;
 			case ClericThief:  {
 				op[i].disabled = false;
 			}
+			break;
 			case ClericAssassin:  {
 				op[i].disabled = false;
 			}
+			break;
 			case Druid:  {
 				op[i].disabled = true;
 			}
+			break;
 			case DruidFighter:  {
 				op[i].disabled = true;
 			}
+			break;
 			case DruidRanger:  {
 				op[i].disabled = true;
 			}
+			break;
 			case DruidMagicuser:  {
 				op[i].disabled = true;
 			}
+			break;
 			case DruidThief:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Bard:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Fighter:  {
 				op[i].disabled = true;
 			}
+			break;
 			case FighterMagicuser:  {
 				op[i].disabled = true;
 			}
+			break;
 			case FighterIllusionist:  {
 				op[i].disabled = true;
 			}
+			break;
 			case FighterThief:  {
 				op[i].disabled = false;
 			}
+			break;
 			case FighterAssassin:  {
 				op[i].disabled = false;
 			}
+			break;
 			case Barbarian:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Ranger:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Magicuser:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Magicuser:  {
 				op[i].disabled = true;
 			}
+			break;
 			case MagicuserThief:  {
 				op[i].disabled = true;
 			}
+			break;
 			case MagicuserAssassin:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Illusionist:  {
 				op[i].disabled = true;
 			}
+			break;
 			case IllusionistThief:  {
 				op[i].disabled = true;
 			}
+			break;
 			case IllusionistAssassin:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Thief:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Assassin:  {
 				op[i].disabled = true;
 			}
+			break;
 			case Monk:  {
 				op[i].disabled = true;
 			}
