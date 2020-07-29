@@ -843,323 +843,154 @@ fmt = 36, FighterMagicuserThief    = fmt;
 	cft			Cleric/fighter/thief      	1	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	0	
 	cmt			Cleric/magic-user/thief   	1	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	0	
 	fmt			Fighter/magic-user/thief  	1	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	0	
-
-
-
-
 	*/
-ds = document.Stats;
-desiredCharRace = ds.DesiredCharRace.value;
-// Get all options within <select id='DesiredCharClass'>...</select>
-var op = document.getElementById("DesiredCharClass").getElementsByTagName("option");
 
+	ds = document.Stats;
+	RacetoCheck = parseInt(ds.DesiredCharRace.value);
+	// Get all options within <select id='DesiredCharClass'>...</select>
+	var op = document.getElementById("DesiredCharClass").getElementsByTagName("option");
+	switch(RacetoCheck) {
+		case Human:
+			// code block
+		case Elf:
+			// code block
+		case Dwarf:
+			// code block
+		case Halfling:
+			// code block
+		case Gnome:
+			// code block
+		case HalfElf:
+			// code block
+		case HalfOrc:
+			/* Classes for Half Orc
+			Cleric
+			Fighter
+			Thief
+			Assassin
+			cf	1	
+			ct	1	
+			ca	1	
+			ft	1	
+			fa	1	
+			*/
+			alert(desiredCharRace);
+			for (var i = 0; i < op.length; i++) {
+				switch(op[i].value) {
+				case Cavalier:  
+					alert(op[i].value);
+					op[i].disabled = true;
+				case Paladin:  
+					op[i].disabled = true;
+				case Cleric:  
+					op[i].disabled = false;
+				case ClericFighter:  
+					op[i].disabled = false;
+				case ClericRanger:  
+					op[i].disabled = true;
+				case ClericMagicuser:  
+					op[i].disabled = true;
+				case ClericIllusionist:  
+					op[i].disabled = true;
+				case ClericThief:  
+					op[i].disabled = false;
+				case ClericAssassin:  
+					op[i].disabled = false;
+				case Druid:  
+					op[i].disabled = true;
+				case DruidFighter:  
+					op[i].disabled = true;
+				case DruidRanger:  
+					op[i].disabled = true;
+				case DruidMagicuser:  
+					op[i].disabled = true;
+				case DruidThief:  
+					op[i].disabled = true;
+				case Bard:  
+					op[i].disabled = true;
+				case Fighter:  
+					op[i].disabled = true;
+				case FighterMagicuser:  
+					op[i].disabled = true;
+				case FighterIllusionist:  
+					op[i].disabled = true;
+				case FighterThief:  
+					op[i].disabled = false;
+				case FighterAssassin:  
+					op[i].disabled = false;
+				case Barbarian:  
+					op[i].disabled = true;
+				case Ranger:  
+					op[i].disabled = true;
+				case Magicuser:  
+					op[i].disabled = true;
+				case Magicuser:  
+					op[i].disabled = true;
+				case MagicuserThief:  
+					op[i].disabled = true;
+				case MagicuserAssassin:  
+					op[i].disabled = true;
+				case Illusionist:  
+					op[i].disabled = true;
+				case IllusionistThief:  
+					op[i].disabled = true;
+				case IllusionistAssassin:  
+					op[i].disabled = true;
+				case Thief:  
+					op[i].disabled = true;
+				case Assassin:  
+					op[i].disabled = true;
+				case Monk:  
+					op[i].disabled = true;
+				default:
+					// code block
+					alert(op[i].value);
+				}
+			}
 
-
-/*
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Cavalier) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Paladin) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Cleric) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == ClericFighter) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == ClericRanger) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == ClericMagicuser) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == ClericIllusionist) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == ClericThief) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == ClericAssassin) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Druid) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == DruidFighter) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == DruidRanger) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == DruidMagicuser) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == DruidThief) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Bard) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Fighter) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == FighterMagicuser) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == FighterIllusionist) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == FighterThief) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == FighterAssassin) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Barbarian) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Ranger) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Magicuser) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Magicuser) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == MagicuserThief) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == MagicuserAssassin) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Illusionist) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == IllusionistThief) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == IllusionistAssassin) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Thief) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Assassin) {
-				op[i].disabled = true;
-			}
-		}
-		for (var i = 0; i < op.length; i++) {
-			if (op[i].value == Monk) {
-				op[i].disabled = true;
-			}
-		}
-*/
-
-switch(desiredCharRace) {
-	case Human:
-		// code block
-	case Elf:
-		// code block
-	case Dwarf:
-		// code block
-	case Halfling:
-		// code block
-	case Gnome:
-		// code block
-	case HalfElf:
-		// code block
-	case HalfOrc:
-		/* Classes for Half Orc
-		Cleric
-		Fighter
-		Thief
-		Assassin
-		cf	1	
-		ct	1	
-		ca	1	
-		ft	1	
-		fa	1	
-		*/
-		alert(desiredCharRace);
-		for (var i = 0; i < op.length; i++) {
-			switch(op[i].value) {
-			case Cavalier:  
-				alert(op[i].value);
-				op[i].disabled = true;
-			case Paladin:  
-				op[i].disabled = true;
-			case Cleric:  
-				op[i].disabled = false;
-			case ClericFighter:  
-				op[i].disabled = false;
-			case ClericRanger:  
-				op[i].disabled = true;
-			case ClericMagicuser:  
-				op[i].disabled = true;
-			case ClericIllusionist:  
-				op[i].disabled = true;
-			case ClericThief:  
-				op[i].disabled = false;
-			case ClericAssassin:  
-				op[i].disabled = false;
-			case Druid:  
-				op[i].disabled = true;
-			case DruidFighter:  
-				op[i].disabled = true;
-			case DruidRanger:  
-				op[i].disabled = true;
-			case DruidMagicuser:  
-				op[i].disabled = true;
-			case DruidThief:  
-				op[i].disabled = true;
-			case Bard:  
-				op[i].disabled = true;
-			case Fighter:  
-				op[i].disabled = true;
-			case FighterMagicuser:  
-				op[i].disabled = true;
-			case FighterIllusionist:  
-				op[i].disabled = true;
-			case FighterThief:  
-				op[i].disabled = false;
-			case FighterAssassin:  
-				op[i].disabled = false;
-			case Barbarian:  
-				op[i].disabled = true;
-			case Ranger:  
-				op[i].disabled = true;
-			case Magicuser:  
-				op[i].disabled = true;
-			case Magicuser:  
-				op[i].disabled = true;
-			case MagicuserThief:  
-				op[i].disabled = true;
-			case MagicuserAssassin:  
-				op[i].disabled = true;
-			case Illusionist:  
-				op[i].disabled = true;
-			case IllusionistThief:  
-				op[i].disabled = true;
-			case IllusionistAssassin:  
-				op[i].disabled = true;
-			case Thief:  
-				op[i].disabled = true;
-			case Assassin:  
-				op[i].disabled = true;
-			case Monk:  
-				op[i].disabled = true;
-			default:
-				// code block
-				alert(op[i].value);
-			}
-		}
-
-	case ElfDark:
-		// code block
-	case ElfGrey:
-		// code block
-	case ElfHigh:
-		// code block
-	case ElfValley:
-		// code block
-	case ElfWild:
-		// code block
-	case ElfWood:
-		// code block
-	case DwarfGrey:
-		// code block
-	case DwarfHill:
-		// code block
-	case DwarfMountain:
-		// code block
-	case HalflingStout:
-		// code block
-	case HalflingHairfoot:
-		// code block
-	case HalflingTallfellow:
-		// code block
-	case GnomeDeep:
-		// code block
-	case GnomeSurface:
-		// code block
-	case HalfElfDark:
-		// code block
-	case HalfElfGrey:
-		// code block
-	case HalfElfHigh:
-		// code block
-	case HalfElfValley:
-		// code block
-	case HalfElfWild:
-		// code block
-	case HalfElfWood:
-		// code block
-	default:
-		// code block
-  }
+		case ElfDark:
+			// code block
+		case ElfGrey:
+			// code block
+		case ElfHigh:
+			// code block
+		case ElfValley:
+			// code block
+		case ElfWild:
+			// code block
+		case ElfWood:
+			// code block
+		case DwarfGrey:
+			// code block
+		case DwarfHill:
+			// code block
+		case DwarfMountain:
+			// code block
+		case HalflingStout:
+			// code block
+		case HalflingHairfoot:
+			// code block
+		case HalflingTallfellow:
+			// code block
+		case GnomeDeep:
+			// code block
+		case GnomeSurface:
+			// code block
+		case HalfElfDark:
+			// code block
+		case HalfElfGrey:
+			// code block
+		case HalfElfHigh:
+			// code block
+		case HalfElfValley:
+			// code block
+		case HalfElfWild:
+			// code block
+		case HalfElfWood:
+			// code block
+		default:
+			// code block
+	}
 
          
 
