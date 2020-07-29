@@ -878,7 +878,6 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			for (var i = 0; i < op.length; i++) {
 				switch(op[i].value) {
 				case Cavalier:  
-					alert(op[i].value);
 					op[i].disabled = true;
 				case Paladin:  
 					op[i].disabled = true;
@@ -942,7 +941,6 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					op[i].disabled = true;
 				default:
 					// code block
-					alert(op[i].value);
 				}
 			}
 
