@@ -875,7 +875,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			fa	1	
 			*/
 			alert(RacetoCheck);
-			for (var i = 0; i < op.length; i++) {
+			for (var i = 0; i < optionSet.length; i++) {
 				switch(optionSet[i].value) {
 				case Cavalier:  
 					document.getElementById("DesiredCharClass")[i].value =+ "Ted was here";
