@@ -922,9 +922,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					op[i].disabled = true;
 				case Ranger:  
 					op[i].disabled = true;
-				case Magicuser:  
-					op[i].disabled = true;
-				case Magicuser:  
+				case MagicUser:  
 					op[i].disabled = true;
 				case MagicuserThief:  
 					op[i].disabled = true;
