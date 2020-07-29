@@ -1150,6 +1150,9 @@ switch(desiredCharRace) {
 			case Monk:  
 				op[i].disabled = true;
 			break;
+			default:
+				// code block
+				alert(op[i].value);
 		}
 
 	break;
