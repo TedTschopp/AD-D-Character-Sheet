@@ -226,6 +226,7 @@ function rollStats() {
 	for(i=0;i<11;i++) {
 		if(multiFlagMethodV) {
 
+			/*			
 			switch(Race) {
 				case Human:
 					// code block
@@ -252,13 +253,6 @@ function rollStats() {
 					// code block
 			  }
 
-
-
-
-
-
-
-			/*			
 			Cavalier                  8 6 4 7 9 3 5
 			Paladin                   7 5 8 3 6 9 4
 			Cleric                    7 4 9 5 8 6 3
