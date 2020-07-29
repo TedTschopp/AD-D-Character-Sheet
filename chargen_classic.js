@@ -1053,134 +1053,103 @@ switch(desiredCharRace) {
 		alert(desiredCharRace);
 		for (var i = 0; i < op.length; i++) {
 			switch(op[i].value) {
-			case Cavalier:  {
+			case Cavalier:  
 				alert(op[i].value);
 				op[i].disabled = true;
-			}
 			break;
-			case Paladin:  {
+			case Paladin:  
 				op[i].disabled = true;
-			}
 			break;
-			case Cleric:  {
+			case Cleric:  
 				op[i].disabled = false;
-			}
 			break;
-			case ClericFighter:  {
+			case ClericFighter:  
 				op[i].disabled = false;
-			}
 			break;
-			case ClericRanger:  {
+			case ClericRanger:  
 				op[i].disabled = true;
-			}
 			break;
-			case ClericMagicuser:  {
+			case ClericMagicuser:  
 				op[i].disabled = true;
-			}
 			break;
-			case ClericIllusionist:  {
+			case ClericIllusionist:  
 				op[i].disabled = true;
-			}
 			break;
-			case ClericThief:  {
+			case ClericThief:  
 				op[i].disabled = false;
-			}
 			break;
-			case ClericAssassin:  {
+			case ClericAssassin:  
 				op[i].disabled = false;
-			}
 			break;
-			case Druid:  {
+			case Druid:  
 				op[i].disabled = true;
-			}
 			break;
-			case DruidFighter:  {
+			case DruidFighter:  
 				op[i].disabled = true;
-			}
 			break;
-			case DruidRanger:  {
+			case DruidRanger:  
 				op[i].disabled = true;
-			}
 			break;
-			case DruidMagicuser:  {
+			case DruidMagicuser:  
 				op[i].disabled = true;
-			}
 			break;
-			case DruidThief:  {
+			case DruidThief:  
 				op[i].disabled = true;
-			}
 			break;
-			case Bard:  {
+			case Bard:  
 				op[i].disabled = true;
-			}
 			break;
-			case Fighter:  {
+			case Fighter:  
 				op[i].disabled = true;
-			}
 			break;
-			case FighterMagicuser:  {
+			case FighterMagicuser:  
 				op[i].disabled = true;
-			}
 			break;
-			case FighterIllusionist:  {
+			case FighterIllusionist:  
 				op[i].disabled = true;
-			}
 			break;
-			case FighterThief:  {
+			case FighterThief:  
 				op[i].disabled = false;
-			}
 			break;
-			case FighterAssassin:  {
+			case FighterAssassin:  
 				op[i].disabled = false;
-			}
 			break;
-			case Barbarian:  {
+			case Barbarian:  
 				op[i].disabled = true;
-			}
 			break;
-			case Ranger:  {
+			case Ranger:  
 				op[i].disabled = true;
-			}
 			break;
-			case Magicuser:  {
+			case Magicuser:  
 				op[i].disabled = true;
-			}
 			break;
-			case Magicuser:  {
+			case Magicuser:  
 				op[i].disabled = true;
-			}
 			break;
-			case MagicuserThief:  {
+			case MagicuserThief:  
 				op[i].disabled = true;
-			}
 			break;
-			case MagicuserAssassin:  {
+			case MagicuserAssassin:  
 				op[i].disabled = true;
-			}
 			break;
-			case Illusionist:  {
+			case Illusionist:  
 				op[i].disabled = true;
-			}
 			break;
-			case IllusionistThief:  {
+			case IllusionistThief:  
 				op[i].disabled = true;
-			}
 			break;
-			case IllusionistAssassin:  {
+			case IllusionistAssassin:  
 				op[i].disabled = true;
-			}
 			break;
-			case Thief:  {
+			case Thief:  
 				op[i].disabled = true;
-			}
 			break;
-			case Assassin:  {
+			case Assassin:  
 				op[i].disabled = true;
-			}
 			break;
-			case Monk:  {
+			case Monk:  
 				op[i].disabled = true;
-			}
+			break;
 		}
 
 	break;
