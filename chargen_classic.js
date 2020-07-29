@@ -63,39 +63,45 @@ fmt = 36, FighterMagicuserThief    = fmt;
 
 
 /*Basic Race */
-Human = 1;
-Elf = 2;
-Dwarf = 3;
-Halfling = 4;
-Gnome = 5;
-HalfElf = 6;
-HalfOrc = 7;
+H = 1, Human = H;
+E = 2, Elf = E;
+D = 3, Dwarf = D;
+Ha = 4, Halfling = Ha;
+Gn = 5, Gnome = Gn;
+He = 6, HalfElf = He;
+Ho = 7, HalfOrc = Ho;
+
 
 
 /* Advanced Race */
-ElfDark = 2.1;
-ElfGrey = 2.2;
-ElfHigh = 2.3;
-ElfValley = 2.4;
-ElfWild = 2.5;
-ElfWood = 2.6;
-DwarfGrey = 3.1;
-DwarfHill = 3.2;
-DwarfMountain = 3.3;
-HalflingStout = 4.1;
-HalflingHairfoot = 4.2;
-HalflingTallfellow = 4.3;
-GnomeDeep = 5.1;
-GnomeSurface = 5.2;
-HalfElfDark = 6.1;
-HalfElfGrey = 6.2;
-HalfElfHigh = 6.3;
-HalfElfValley = 6.4;
-HalfElfWild = 6.5;
-HalfElfWood = 6.6;
+ED = 2.1, ElfDark = ED;
+EG = 2.2, ElfGrey = EG;
+EH = 2.3, ElfHigh = EH;
+EV = 2.4, ElfValley = EV;
+EWi = 2.5, ElfWild = EWi;
+EWo = 2.6, ElfWood = Ewo;
+DG = 3.1, DwarfGrey = DG;
+DH = 3.2, DwarfHill = DH;
+DM = 3.3, DwarfMountain = DM;
+HaS = 4.1, HalflingStout = HaS;
+HaH = 4.2, HalflingHairfoot = HaH;
+HaT = 4.3, HalflingTallfellow = HaT;
+Gd = 5.1, GnomeDeep = Gd;
+Gs = 5.2, GnomeSurface = Gs;
+HED = 6.1, HalfElfDark = HED;
+HEG = 6.2, HalfElfGrey = HEG;
+HEH = 6.3, HalfElfHigh = HEH;
+HEV = 6.4, HalfElfValley = HEV;
+HEWi = 6.5, HalfElfWild = HEWi;
+HEWo = 6.6, HalfElfWood = HEWo;
 
+/* Sex */
 Male = 1;
 Female = 2;
+
+
+
+
 
 Strength = 0;
 Intelligence = 1;
@@ -297,7 +303,7 @@ DH			DwarfHill = 3.2;
 DM			DwarfMountain = 3.3;
 HaS			HalflingStout = 4.1;
 HaH			HalflingHairfoot = 4.2;
-Hat			HalflingTallfellow = 4.3;
+HaT			HalflingTallfellow = 4.3;
 Gd			GnomeDeep = 5.1;
 Gs			GnomeSurface = 5.2;
 HED			HalfElfDark = 6.1;
@@ -753,7 +759,7 @@ function checkDesiredRace() {
 	DM			DwarfMountain = 3.3;
 	HaS			HalflingStout = 4.1;
 	HaH			HalflingHairfoot = 4.2;
-	Hat			HalflingTallfellow = 4.3;
+	HaT			HalflingTallfellow = 4.3;
 	Gd			GnomeDeep = 5.1;
 	Gs			GnomeSurface = 5.2;
 	HED			HalfElfDark = 6.1;
