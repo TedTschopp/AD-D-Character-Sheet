@@ -766,8 +766,6 @@ function checkDesiredRace() {
 	HEWi			HalfElfWild = 6.5;
 	HEWo			HalfElfWood = 6.6;
 
-
-
 Fighter = 1;
 Ranger = 2;
 Paladin = 3;
