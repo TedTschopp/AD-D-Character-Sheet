@@ -877,13 +877,12 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			for (var i = 0; i < optionSet.length; i++) {
 				switch(parseInt(optionSet[i].value)) {
 				case Cavalier:
-					alert(i+" = " + optionSet[i].value);
-					document.getElementById("DesiredCharClass")[i].value += "Ted was here";
 					document.getElementById("DesiredCharClass")[i].disabled = true;
 					optionSet[i].disabled = true;
 				case Paladin:  
 					optionSet[i].disabled = true;
 				case Cleric:  
+					document.getElementById("DesiredCharClass")[i].disabled = false;
 					optionSet[i].disabled = false;
 				case ClericFighter:  
 					optionSet[i].disabled = false;
