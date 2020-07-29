@@ -59,9 +59,6 @@ cft = 34, ClericFighterThief       = cft;
 cmt = 35, ClericMagicuserThief     = cmt;
 fmt = 36, FighterMagicuserThief    = fmt;
 
-
-
-
 /*Basic Race */
 H = 1, Human = H;
 E = 2, Elf = E;
@@ -890,7 +887,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 	*/
 ds = document.Stats;
 desiredCharRace = ds.DesiredCharRace;
-
+alert(desiredCharRace)
 
 switch(desiredCharRace) {
 	case Human:
@@ -913,6 +910,62 @@ switch(desiredCharRace) {
 	break;
 	case HalfOrc:
 		// code block
+
+
+
+		ds.
+
+		HO	
+		cf	1	
+		cr	0	
+		cm	0	
+		ci	0	
+		ct	1	
+		ca	1	
+		df	0	
+		dr	0	
+		dm	0	
+		dt	0	
+		fm	0	
+		fi	0	
+		ft	1	
+		fa	1	
+		rm	0	
+		mt	0	
+		ma	0	
+		it	0	
+		ia	0	
+		cfm	0	
+		cft	0	
+		cmt	0	
+		fmt	0	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
 	break;
 	case ElfDark:
 		// code block
