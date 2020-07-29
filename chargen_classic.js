@@ -1114,7 +1114,9 @@ switch(desiredCharRace) {
 			default:
 				// code block
 				alert(op[i].value);
+			}
 		}
+
 	case ElfDark:
 		// code block
 	case ElfGrey:
