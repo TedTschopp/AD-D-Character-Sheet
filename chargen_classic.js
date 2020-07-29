@@ -1021,22 +1021,16 @@ var op = document.getElementById("DesiredCharClass").getElementsByTagName("optio
 switch(desiredCharRace) {
 	case Human:
 		// code block
-	break;
 	case Elf:
 		// code block
-	break;
 	case Dwarf:
 		// code block
-	break;
 	case Halfling:
 		// code block
-	break;
 	case Gnome:
 		// code block
-	break;
 	case HalfElf:
 		// code block
-	break;
 	case HalfOrc:
 		/* Classes for Half Orc
 		Cleric
@@ -1049,173 +1043,118 @@ switch(desiredCharRace) {
 		ft	1	
 		fa	1	
 		*/
-
 		alert(desiredCharRace);
 		for (var i = 0; i < op.length; i++) {
 			switch(op[i].value) {
 			case Cavalier:  
 				alert(op[i].value);
 				op[i].disabled = true;
-			break;
 			case Paladin:  
 				op[i].disabled = true;
-			break;
 			case Cleric:  
 				op[i].disabled = false;
-			break;
 			case ClericFighter:  
 				op[i].disabled = false;
-			break;
 			case ClericRanger:  
 				op[i].disabled = true;
-			break;
 			case ClericMagicuser:  
 				op[i].disabled = true;
-			break;
 			case ClericIllusionist:  
 				op[i].disabled = true;
-			break;
 			case ClericThief:  
 				op[i].disabled = false;
-			break;
 			case ClericAssassin:  
 				op[i].disabled = false;
-			break;
 			case Druid:  
 				op[i].disabled = true;
-			break;
 			case DruidFighter:  
 				op[i].disabled = true;
-			break;
 			case DruidRanger:  
 				op[i].disabled = true;
-			break;
 			case DruidMagicuser:  
 				op[i].disabled = true;
-			break;
 			case DruidThief:  
 				op[i].disabled = true;
-			break;
 			case Bard:  
 				op[i].disabled = true;
-			break;
 			case Fighter:  
 				op[i].disabled = true;
-			break;
 			case FighterMagicuser:  
 				op[i].disabled = true;
-			break;
 			case FighterIllusionist:  
 				op[i].disabled = true;
-			break;
 			case FighterThief:  
 				op[i].disabled = false;
-			break;
 			case FighterAssassin:  
 				op[i].disabled = false;
-			break;
 			case Barbarian:  
 				op[i].disabled = true;
-			break;
 			case Ranger:  
 				op[i].disabled = true;
-			break;
 			case Magicuser:  
 				op[i].disabled = true;
-			break;
 			case Magicuser:  
 				op[i].disabled = true;
-			break;
 			case MagicuserThief:  
 				op[i].disabled = true;
-			break;
 			case MagicuserAssassin:  
 				op[i].disabled = true;
-			break;
 			case Illusionist:  
 				op[i].disabled = true;
-			break;
 			case IllusionistThief:  
 				op[i].disabled = true;
-			break;
 			case IllusionistAssassin:  
 				op[i].disabled = true;
-			break;
 			case Thief:  
 				op[i].disabled = true;
-			break;
 			case Assassin:  
 				op[i].disabled = true;
-			break;
 			case Monk:  
 				op[i].disabled = true;
-			break;
 			default:
 				// code block
 				alert(op[i].value);
 		}
-
-	break;
 	case ElfDark:
 		// code block
-	break;
 	case ElfGrey:
 		// code block
-	break;
 	case ElfHigh:
 		// code block
-	break;
 	case ElfValley:
 		// code block
-	break;
 	case ElfWild:
 		// code block
-	break;
 	case ElfWood:
 		// code block
-	break;
 	case DwarfGrey:
 		// code block
-	break;
 	case DwarfHill:
 		// code block
-	break;
 	case DwarfMountain:
 		// code block
-	break;
 	case HalflingStout:
 		// code block
-	break;
 	case HalflingHairfoot:
 		// code block
-	break;
 	case HalflingTallfellow:
 		// code block
-	break;
 	case GnomeDeep:
 		// code block
-	break;
 	case GnomeSurface:
 		// code block
-	break;
 	case HalfElfDark:
 		// code block
-	break;
 	case HalfElfGrey:
 		// code block
-	break;
 	case HalfElfHigh:
 		// code block
-	break;
 	case HalfElfValley:
 		// code block
-	break;
 	case HalfElfWild:
 		// code block
-	break;
 	case HalfElfWood:
 		// code block
-	break;
 	default:
 		// code block
   }
