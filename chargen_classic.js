@@ -874,7 +874,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			ft	1	
 			fa	1	
 			*/
-			alert(desiredCharRace);
+			alert(RacetoCheck);
 			for (var i = 0; i < op.length; i++) {
 				switch(op[i].value) {
 				case Cavalier:  
