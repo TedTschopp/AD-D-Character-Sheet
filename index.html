@@ -1,0 +1,577 @@
+<html>
+
+<head>
+    <title>Dragonsfoot - First Edition AD&D - Online Character Generator</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+    <meta name='keywords' content='AD&D, dnd, roleplay, dungeons and dragons, RPG, adventures, fantasy, monsters,lejendary adventures, LA RPG, role play'>
+    <meta name='description' content='Free fantasy roleplay material for advanced dungeons and dragons AD&D and lejendary adventures.'>
+    <style>
+    INPUT.button {
+        font: bold 8pt;
+        font-family: Lucida Sans;
+    }
+
+    INPUT.text {
+        font: bold 8pt;
+        color: #600000;
+    }
+
+    SELECT {
+        font-family: Arial;
+        font: bold 8pt;
+    }
+
+    TEXTAREA {
+        font-family: courier;
+        font: 8pt;
+    }
+
+    .save {
+        font-family: Arial;
+        font: bold 8pt;
+    }
+
+    .pers {
+        font-family: Arial;
+        font: bold 8pt;
+        color: #800000;
+    }
+    </style>
+    <style><!--a:hover{color:ff9900; }--></style>
+    <style><!--a{text-decoration:none}//--></style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+            <table width='100%' border='0' cellspacing='0' cellpadding='0'>
+                <tr>
+                    <td align='left' valign='top'>
+                        <table border='0' cellspacing='3' cellpadding='3' width='100%'>
+                            <tr align='left' valign='top'>
+                                <td colspan='2' height='26'>
+                                    <table width='100%' border='0' cellspacing='0' cellpadding='0' height='38'>
+                                        <tr align='left' valign='top'>
+                                            <td><span class='bodytext'>
+                                                    <style>
+                                                    < !--a:hover {
+                                                        color: ff9900;
+                                                    }
+
+                                                    -->
+                                                    </style>
+                                                    <style>
+                                                    < !--a {
+                                                        text-decoration: none
+                                                    }
+
+                                                    //-->
+                                                    </style><span class='maintitle'>First Edition AD&D<br></span><span class='sectiondetails'>The home of the Original Advanced Dungeons & Dragons game at Dragonsfoot!<br>Updated regularly.</span>
+                                                </span> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align='left' valign='top' width='100%'>
+                                    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
+                                        <tr>
+                                            <td align='left' valign='top' class='titletext'><b>First Edition AD&amp;D Character Generator</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td align='left' valign='top' height='2' class='bodytext'>
+                                                <script language="JavaScript" src="chargen_classic.js"></script><form name="Stats">
+                                                <table border=1 cellspacing=0 cellpadding=2 align="center">
+                                                    <tr>
+                                                        <td colspan=3 bgcolor="#800000" >
+                                                            <font size="1" face="arial" color="#FAF8E9">
+                                                                <input type="button" class="button" name="RollButton" value="    Roll   " onClick="reRoll()">
+                                                                <input type="Radio" name="RollMethod" value="1"> 3 dice
+                                                                <input type="Radio" name="RollMethod" value="2"> best 3 of 4 dice
+                                                                <input type="Radio" name="RollMethod" value="3"> best 3 of 6 dice
+                                                                <input type="Radio" name="RollMethod" value="4"> best 3 of 4 dice + 5 bonus points
+                                                                <input type="Radio" name="RollMethod" value="6" checked> Method V + Dragon Mag.
+                                                            </font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan=3 bgcolor="#FAF8E9">
+                                                            <font face="Arial" size="2" color="#800000">
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=1 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Desired Gender</b></font>
+                                                                    </td>
+                                                                    <td colspan=1 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Desired Race</b></font>
+                                                                    </td>
+                                                                    <td colspan=1 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Desired Class</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <select name="DesiredCharSex" onChange="addText()">
+                                                                            <option value="">---------- Select ----------
+                                                                            <option value="Male">Male
+                                                                            <option value="Female">Female
+                                                                        </select><br><br>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <font size="1">
+                                                                            <select name="DesiredCharRace" onChange="checkDesiredRace()">
+                                                                                <option value="">---------- Select ----------</option>
+                                                                                <option value="1">Human</option>
+                                                                                <option value="2" disabled="disabled">Elf</option>
+                                                                                <option value="2.1">&nbsp;&nbsp;Elf-Dark</option>
+                                                                                <option value="2.2">&nbsp;&nbsp;Elf-Grey</option>
+                                                                                <option value="2.3">&nbsp;&nbsp;Elf-High</option>
+                                                                                <option value="2.4">&nbsp;&nbsp;Elf-Valley</option>
+                                                                                <option value="2.5">&nbsp;&nbsp;Elf-Wild</option>
+                                                                                <option value="2.6">&nbsp;&nbsp;Elf-Wood</option>
+                                                                                <option value="3" disabled="disabled">Dwarf</option>
+                                                                                <option value="3.1">&nbsp;&nbsp;Dwarf-Grey</option> 
+                                                                                <option value="3.2">&nbsp;&nbsp;Dwarf-Hill</option>
+                                                                                <option value="3.3">&nbsp;&nbsp;Dwarf-Mountain</option>
+                                                                                <option value="4" disabled="disabled">Halfling</option>
+                                                                                <option value="4.1">&nbsp;&nbsp;Halfling-Stout</option>
+                                                                                <option value="4.2">&nbsp;&nbsp;Halfling-Hairfoot</option>
+                                                                                <option value="4.3">&nbsp;&nbsp;Halfling-Tallfellow</option>
+                                                                                <option value="5" disabled="disabled">Gnome</option>
+                                                                                <option value="5.1">&nbsp;&nbsp;Gnome-Deep</option>
+                                                                                <option value="5.2">&nbsp;&nbsp;Gnome-Surface</option>
+                                                                                <option value="6" disabled="disabled">Half-Elf</option>
+                                                                                <option value="6.1">&nbsp;&nbsp;Half-Elf-Dark</option>
+                                                                                <option value="6.2">&nbsp;&nbsp;Half-Elf-Grey</option>
+                                                                                <option value="6.3">&nbsp;&nbsp;Half-Elf-High</option>
+                                                                                <option value="6.4">&nbsp;&nbsp;Half-Elf-Valley</option>
+                                                                                <option value="6.5">&nbsp;&nbsp;Half-Elf-Wild</option>
+                                                                                <option value="6.6">&nbsp;&nbsp;Half-Elf-Wood</option>
+                                                                                <option value="7">Half-Orc</option>
+                                                                            </select><br>
+                                                                            <a href="javascript:openTable3()">Race/Attribute Table</a>
+                                                                        </font>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <select name="DesiredCharClass" onChange="checkDesiredClass()">
+                                                                            <option value="">---------- Select ----------</option>
+                                                                            <option value = "12">Cavalier</option>
+                                                                            <option value = "3">&nbsp;&nbsp;Paladin</option>
+                                                                            <option value = "4">Cleric</option>
+                                                                            <option value = "15">&nbsp;&nbsp;Cleric &#x2F; ranger</option>
+                                                                            <option value = "16">&nbsp;&nbsp;Cleric &#x2F; magic-user</option>
+                                                                            <option value = "17">&nbsp;&nbsp;Cleric &#x2F; illusionist</option>
+                                                                            <option value = "18">&nbsp;&nbsp;Cleric &#x2F; thief</option>
+                                                                            <option value = "19">&nbsp;&nbsp;Cleric &#x2F; assassin</option>
+                                                                            <option value = "33">&nbsp;&nbsp;Cleric &#x2F; fighter &#x2F; magic-user</option>
+                                                                            <option value = "34">&nbsp;&nbsp;Cleric &#x2F; fighter &#x2F; thief</option>
+                                                                            <option value = "35">&nbsp;&nbsp;Cleric &#x2F; magic-user &#x2F; thief</option>
+                                                                            <option value = "5">&nbsp;&nbsp;Druid</option>
+                                                                            <option value = "20">&nbsp;&nbsp;&nbsp;&nbsp;Druid &#x2F; fighter</option>
+                                                                            <option value = "21">&nbsp;&nbsp;&nbsp;&nbsp;Druid &#x2F; ranger</option>
+                                                                            <option value = "22">&nbsp;&nbsp;&nbsp;&nbsp;Druid &#x2F; magic-user</option>
+                                                                            <option value = "23">&nbsp;&nbsp;&nbsp;&nbsp;Druid &#x2F; thief</option>
+                                                                            <option value = "10">&nbsp;&nbsp;Bard</option>
+                                                                            <option value = "11">Fighter</option>
+                                                                            <option value = "24">&nbsp;&nbsp;Fighter &#x2F; magic-user</option>
+                                                                            <option value = "25">&nbsp;&nbsp;Fighter &#x2F; illusionist</option>
+                                                                            <option value = "26">&nbsp;&nbsp;Fighter &#x2F; thief</option>
+                                                                            <option value = "27">&nbsp;&nbsp;Fighter &#x2F; assassin</option>
+                                                                            <option value = "36">&nbsp;&nbsp;Fighter &#x2F; magic-user &#x2F; thief</option>
+                                                                            <option value = "1">&nbsp;&nbsp;Barbarian</option>
+                                                                            <option value = "13">&nbsp;&nbsp;Ranger</option>
+                                                                            <option value = "28">&nbsp;&nbsp;&nbsp;&nbsp;Ranger &#x2F; magic-user</option>
+                                                                            <option value = "2">Magic-User</option>
+                                                                            <option value = "29">&nbsp;&nbsp;Magic-user &#x2F; thief</option>
+                                                                            <option value = "30">&nbsp;&nbsp;Magic-user &#x2F; assassin</option>
+                                                                            <option value = "6">&nbsp;&nbsp;Illusionist</option>
+                                                                            <option value = "31">&nbsp;&nbsp;&nbsp;&nbsp;Illusionist &#x2F; thief</option>
+                                                                            <option value = "32">&nbsp;&nbsp;&nbsp;&nbsp;Illusionist &#x2F; assassin</option>
+                                                                            <option value = "7">Thief</option>
+                                                                            <option value = "8">&nbsp;&nbsp;Assassin</option>
+                                                                            <option value = "9">&nbsp;&nbsp;Monk</option>
+                                                                        </select>
+                                                                        </br>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </font>
+                                                        </td>
+                                                    </tr>                                                    <tr>
+                                                        <td colspan=3 bgcolor="#FAF8E9" width="594">
+                                                            <font face="Arial" size="2" color="#800000">
+                                                                <b>Character Name:</b> <input type="text" class="text" name="CharName" size="80" maxlength="80">
+                                                            </font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign=top bgcolor="#FAF8E9" width="300">
+                                                            <table border=0 cellspacing=0 width="300">
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Attributes</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="arial" color="#800000">
+                                                                            <b>Bonus Points:</b></font>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <input type="text" class="text" name="BonusStat" size="2" maxlength="2" onFocus="noEdit(Bonus_Points)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>STR:</b>
+                                                                            <input type="text" class="text" name="Str" size="2" maxlength="2" onFocus="noEdit(Strength)">
+                                                                            <input type="text" class="text" name="SStr" size="2" maxlength="2" onFocus="noEdit(Super_Strength)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Strength)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Strength)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>INT:</b>
+                                                                            <input type="text" class="text" name="Int" size="2" maxlength="2" onFocus="noEdit(Intelligence)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Intelligence)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Intelligence)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>WIS:</b>
+                                                                            <input type="text" class="text" name="Wis" size="2" maxlength="2" onFocus="noEdit(Wisdom)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Wisdom)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Wisdom)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>DEX:</b>
+                                                                            <input type="text" class="text" name="Dex" size="2" maxlength="2" onFocus="noEdit(Dexterity)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Dexterity)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Dexterity)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>CON:</b>
+                                                                            <input type="text" class="text" name="Con" size="2" maxlength="2" onFocus="noEdit(Constitution)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Constitution)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Constitution)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>CHR:</b>
+                                                                            <input type="text" class="text" name="Chr" size="2" maxlength="2" onFocus="noEdit(Charisma)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Charisma)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Charisma)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>COM:</b>
+                                                                            <input type="text" class="text" name="Com" size="2" maxlength="2"></font>
+                                                                    </td>
+                                                                    <td align="right"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>COM(F):</b>
+                                                                            <input type="text" class="text" name="ComF" size="2" maxlength="2" onFocus="noEdit(Face_Comeliness)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Face_Comeliness)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Face_Comeliness)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>COM(B):</b>
+                                                                            <input type="text" class="text" name="ComB" size="2" maxlength="2" onFocus="noEdit(Body_Comeliness)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Body_Comeliness)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Body_Comeliness)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>COM(V):</b>
+                                                                            <input type="text" class="text" name="ComV" size="2" maxlength="2" onFocus="noEdit(Vocal_Comeliness)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Vocal_Comeliness)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Vocal_Comeliness)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="courier"><b>PER:</b>
+                                                                            <input type="text" class="text" name="Per" size="2" maxlength="2" onFocus="noEdit(Perception)"></font>
+                                                                    </td>
+                                                                    <td align="right"><input type="button" class="button" name="Add" value=" + " onClick="IncrStat(Perception)">
+                                                                                      <input type="button" class="button" name="Subtract" value=" -  " onClick="DecrStat(Perception)"></td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2><img src="t.gif" width=100 height=1 border=0 alt=""></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="arial" color="#800000">
+                                                                            <b>Hit Points:</b></font>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <input type="text" class="text" name="HitPoints" size="2" maxlength="2" onFocus="noEdit(Hit_Points)"></td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2><img src="t.gif" width=100 height=1 border=0 alt=""></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="arial" color="#800000">
+                                                                            <b>Base AC:</b></font>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <input type="text" class="text" name="ArmorClass" size="2" maxlength="2" onFocus="noEdit(Armor_Class)"></td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2><img src="t.gif" width=100 height=1 border=0 alt=""></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <font size="2" face="arial" color="#800000">
+                                                                            <b>Gold Pieces:</b></font>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <input type="text" class="text" name="Gold" size="3" maxlength="3" onFocus="noEdit(Gold_Pieces)"></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td valign=top bgcolor="#FAF8E9" width="150">
+                                                            <table border=0 cellspacing=0 width=100%>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Gender</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <select name="CharSex" onChange="addText()">
+                                                                            <option value="">---------- Select ----------
+                                                                            <option value="Male">Male
+                                                                            <option value="Female">Female
+                                                                        </select><br><br></td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Race</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <font size="1">
+                                                                            <select name="CharRace" onChange="checkRace()">
+                                                                                <option value="">---------- Select ----------
+                                                                                <option value="Human">Human
+                                                                                <option value="Elf">Elf
+                                                                                <option value="Dwarf">Dwarf
+                                                                                <option value="Halfling">Halfling
+                                                                                <option value="Gnome">Gnome
+                                                                                <option value="Half-Elf">Half-Elf
+                                                                                <option value="Half-Orc">Half-Orc
+                                                                            </select><br>
+                                                                            <a href="javascript:openTable3()">Race/Attribute Table</a>
+                                                                        </font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Class</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <select name="CharClass" onChange="checkClass()">
+                                                                            <option value="">---------- Select ----------</option>
+                                                                            <option value="Fighter">Fighter</option>
+                                                                            <option value="Ranger">&nbsp;&nbsp;Ranger</option>
+                                                                            <option value="Paladin">&nbsp;&nbsp;Paladin</option>
+                                                                            <option value="Cleric">Cleric</option>
+                                                                            <option value="Druid">&nbsp;&nbsp;Druid</option>
+                                                                            <option value="Mage">Magic User</option>
+                                                                            <option value="Illusionist">&nbsp;&nbsp;Illusionist</option>
+                                                                            <option value="Thief">Thief</option>
+                                                                            <option value="Assassin">&nbsp;&nbsp;Assassin</option>
+                                                                            <option value="Monk">Monk</option>
+                                                                            <option value="Bard">Bard</option>
+                                                                        </select></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align=center>
+                                                                        <font size="1" color="#800000"><b>- - OR - -</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <font size="1">
+                                                                            <select name="CharMultiClass" onChange="checkMultiClass()">
+                                                                                <option value="">---------- Select ----------</option>
+                                                                                <option value="Cleric/Fighter">Cleric/Fighter</option>
+                                                                                <option value="Cleric/Fighter/Mage">Cleric/Fighter/Mage</option>
+                                                                                <option value="Cleric/Ranger">Cleric/Ranger</option>
+                                                                                <option value="Cleric/Mage">Cleric/Mage</option>
+                                                                                <option value="Cleric/Thief">Cleric/Thief</option>
+                                                                                <option value="Cleric/Assassin">Cleric/Assassin</option>
+                                                                                <option value="Fighter/Mage">Fighter/Mage</option>
+                                                                                <option value="Fighter/Illusionist">Fighter/Illusionist</option>
+                                                                                <option value="Fighter/Thief">Fighter/Thief</option>
+                                                                                <option value="Fighter/Assassin">Fighter/Assassin</option>
+                                                                                <option value="Fighter/Mage/Thief">Fighter/Mage/Thief</option>
+                                                                                <option value="Mage/Thief">Mage/Thief</option>
+                                                                                <option value="Illusionist/Thief">Illusionist/Thief</option>
+                                                                                <option value="Fighter/Bard">Fighter/Bard</option>
+                                                                            </select><br>
+                                                                            <a href="javascript:openTable1()">Race/Class Table</a>
+                                                                        </font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Alignment</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <select name="Align" onChange="checkAlign()">
+                                                                            <option value="">---------- Select ----------
+                                                                            <option value="Lawful/Good">Lawful/Good
+                                                                            <option value="Lawful/Neutral">Lawful/Neutral
+                                                                            <option value="Lawful/Evil">Lawful/Evil
+                                                                            <option value="Neutral/Good">Neutral/Good
+                                                                            <option value="True Neutral">True Neutral
+                                                                            <option value="Neutral/Evil">Neutral/Evil
+                                                                            <option value="Chaotic/Good">Chaotic/Good
+                                                                            <option value="Chaotic/Neutral">Chaotic/Neutral
+                                                                            <option value="Chaotic/Evil">Chaotic/Evil
+                                                                        </select>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2><img src="t.gif" width=100 height=1 border=0 alt=""></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td width="285" valign="top" bgcolor="#FAF8E9">
+                                                            <table border=0 cellspacing=0 width=285 bgcolor="#FAF8E9">
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Saving Throws</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="save">Paralyze/Poison/Death Mag</td>
+                                                                    <td align="right" valign="middle">
+                                                                        <input type="text" class="text" name="Save1" size="2" maxlength="2" onFocus="noEdit(Paralyze_Poison_Death_Save)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="save">Petrify/Polymorph</td>
+                                                                    <td align="right" valign="middle">
+                                                                        <input type="text" class="text" name="Save2" size="2" maxlength="2" onFocus="noEdit(Petrify_Polymorph_Save)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="save">Rods/Staves/Wands</td>
+                                                                    <td align="right" valign="middle">
+                                                                        <input type="text" class="text" name="Save3" size="2" maxlength="2" onFocus="noEdit(Rods_Staves_Wands_Save)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="save">Breath Weapons</td>
+                                                                    <td align="right" valign="middle">
+                                                                        <input type="text" class="text" name="Save4" size="2" maxlength="2" onFocus="noEdit(Breath_Weapons_Saves)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="save">Spells</td>
+                                                                    <td align="right" valign="middle">
+                                                                        <input type="text" class="text" name="Save5" size="2" maxlength="2" onFocus="noEdit(Spells_Saves)"></td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2 align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9"><b>Age - Height - Weight</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pers">Age (years)</td>
+                                                                    <td align="right">
+                                                                        <input type="text" class="text" name="CharAge" size="4" maxlength="4" onFocus="noEdit(Age)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pers">Height</td>
+                                                                    <td align="right">
+                                                                        <input type="text" class="text" name="Height" size="10" maxlength="10" onFocus="noEdit(Height)"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pers">Weight</td>
+                                                                    <td align="right">
+                                                                        <input type="text" class="text" name="Weight" size="10" maxlength="10" onFocus="noEdit(Weight)"></td>
+                                                                </tr>
+                                                                <tr bgcolor="#800000">
+                                                                    <td colspan=2><img src="t.gif" width=285 height=1 border=0 alt=""></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan=3 align="center" bgcolor="#FAF8E9">
+                                                            <table border=0 cellspacing=0 width=100% bgcolor="#FAF8E9">
+                                                                <tr bgcolor="#800000">
+                                                                    <td align="center">
+                                                                        <font size="2" face="arial" color="#FAF8E9">
+                                                                            <b>Attribute, Class and Race Information Box</b></font>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <textarea name="info" cols="70" rows="10" wrap="physical" onFocus="noEdit(Attribute_Class_and_Race_Info)"></textarea>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr bgcolor="#ffff88">
+                                                        <td colspan="3" align="center">
+                                                            <font class="white_sectioncontents">
+                                                                <a href="javascript:cleanPrint()">Print This Sheet</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align='right' valign='top' width='1'>
+                                    <!--#include virtual='php4/sidebanner.shtml' -->
+                                </td>
+                            </tr>
+                        </table>
+                        <p>&nbsp;</p>
+
+                    </td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width='100%' border='0' cellspacing='0' cellpadding='0'>
+                <tr>
+                    <td width='100%'></td>
+                </tr>
+                <tr>
+                    <td colspan='4' class='bodytext'>  </td>
+                </tr>
+                <tr>
+                    <td colspan='4' class='bodytext'>
+                        <table width='100%' border='0' cellspacing='2' cellpadding='2'>
+                            <tr>
+                                <td bordercolor='ffffff' class='bodytext'>
+                                    <class='bodytext'>The material on this page is either copyrighted (&copy 1999 - 2019) Dragonsfoot Web Team or has been used under permission. You may download, store, redistribute or generally circulate any of the material found on this page but you must keep all copyright information intact and distribute files as is. No modification is permitted without express permission from the Dragonsfoot Web Team. You may not claim this work as your own unless you are the original author. Enquiries may be sent to &#119;&#101;&#098;&#109;&#097;&#115;&#116;&#101;&#114;&#064;&#100;&#114;&#097;&#103;&#111;&#110;&#115;&#102;&#111;&#111;&#116;&#046;&#111;&#114;&#103;.<br>Dragonsfoot acknowledges all copyrights, trademarks and registered trademarks detailed on this page that do not belong to Dragonsfoot and make no challenges to the ownership of said property rights.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+</body>
+
+</html>
