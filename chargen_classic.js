@@ -79,7 +79,7 @@ EG = 2.2, ElfGrey = EG;
 EH = 2.3, ElfHigh = EH;
 EV = 2.4, ElfValley = EV;
 EWi = 2.5, ElfWild = EWi;
-EWo = 2.6, ElfWood = Ewo;
+EWo = 2.6, ElfWood = EWo;
 DG = 3.1, DwarfGrey = DG;
 DH = 3.2, DwarfHill = DH;
 DM = 3.3, DwarfMountain = DM;
