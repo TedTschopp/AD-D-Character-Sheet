@@ -875,72 +875,103 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			fa	1	
 			*/
 			for (var i = 0; i < optionSet.length; i++) {
-				setRaceToDisabled = optionSet[i].disabled;
+				setRaceToDisabled = document.getElementById("DesiredCharClass")[i].disabled;
 				switch(parseInt(optionSet[i].value)) {
 				case Cavalier:
 					/*document.getElementById("DesiredCharClass")[i].disabled = true;*/
 					setRaceToDisabled = true;
+					break
 				case Paladin:  
 					setRaceToDisabled = true;
+					break
 				case Cleric:  
 					/*document.getElementById("DesiredCharClass")[i].disabled = true;*/
 					setRaceToDisabled = false;
+					break
 				case ClericFighter:  
 					setRaceToDisabled = false;
+					break
 				case ClericRanger:  
 					setRaceToDisabled = true;
+					break
 				case ClericMagicuser:  
 					setRaceToDisabled = true;
+					break
 				case ClericIllusionist:  
 					setRaceToDisabled = true;
+					break
 				case ClericThief:  
 					setRaceToDisabled = false;
+					break
 				case ClericAssassin:  
 					setRaceToDisabled = false;
+					break
 				case Druid:  
 					setRaceToDisabled = true;
+					break
 				case DruidFighter:  
 					setRaceToDisabled = true;
+					break
 				case DruidRanger:  
 					setRaceToDisabled = true;
+					break
 				case DruidMagicuser:  
 					setRaceToDisabled = true;
+					break
 				case DruidThief:  
 					setRaceToDisabled = true;
+					break
 				case Bard:  
 					setRaceToDisabled = true;
+					break
 				case Fighter:  
 					setRaceToDisabled = true;
+					break
 				case FighterMagicuser:  
 					setRaceToDisabled = true;
+					break
 				case FighterIllusionist:  
 					setRaceToDisabled = true;
+					break
 				case FighterThief:  
 					setRaceToDisabled = false;
+					break
 				case FighterAssassin:  
 					setRaceToDisabled = false;
+					break
 				case Barbarian:  
 					setRaceToDisabled = true;
+					break
 				case Ranger:  
 					setRaceToDisabled = true;
+					break
 				case MagicUser:  
 					setRaceToDisabled = true;
+					break
 				case MagicuserThief:  
 					setRaceToDisabled = true;
+					break
 				case MagicuserAssassin:  
 					setRaceToDisabled = true;
+					break
 				case Illusionist:  
 					setRaceToDisabled = true;
+					break
 				case IllusionistThief:  
 					setRaceToDisabled = true;
+					break
 				case IllusionistAssassin:  
 					setRaceToDisabled = true;
+					break
 				case Thief:  
 					setRaceToDisabled = true;
+					break
 				case Assassin:  
 					setRaceToDisabled = true;
+					break
 				case Monk:  
 					setRaceToDisabled = true;
+				break
 				default:
 					// code block
 				}
