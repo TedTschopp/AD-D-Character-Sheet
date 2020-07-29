@@ -912,7 +912,7 @@ switch(desiredCharRace) {
 		// code block
 
 
-
+/*
 		ds.
 
 		HO	
@@ -939,7 +939,7 @@ switch(desiredCharRace) {
 		cft	0	
 		cmt	0	
 		fmt	0	
-		
+*/		
 		
 		
 		
