@@ -874,11 +874,11 @@ fmt = 36, FighterMagicuserThief    = fmt;
 			ft	1	
 			fa	1	
 			*/
-			alert(RacetoCheck);
 			for (var i = 0; i < optionSet.length; i++) {
 				switch(optionSet[i].value) {
-				case Cavalier:  
-					document.getElementById("DesiredCharClass")[i].value =+ "Ted was here";
+				case Cavalier:
+					alert(i+" = " + optionSet[i].value);
+					document.getElementById("DesiredCharClass")[i].value += "Ted was here";
 					document.getElementById("DesiredCharClass")[i].disabled = true;
 					optionSet[i].disabled = true;
 				case Paladin:  
