@@ -891,26 +891,26 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					case Fighter:  
 					case FighterMagicuser:  
 					case FighterIllusionist:  
-					case Barbarian:  
-					case Ranger:  
-					case MagicUser:  
-					case MagicuserThief:  
-					case MagicuserAssassin:  
-					case Illusionist:  
-					case IllusionistThief:  
-					case IllusionistAssassin:  
-					case Thief:  
-					case Assassin:  
-					case Monk:  
+					case Barbarian:
+					case Ranger:
+					case MagicUser:
+					case MagicuserThief:
+					case MagicuserAssassin:
+					case Illusionist:
+					case IllusionistThief:
+					case IllusionistAssassin:
+					case Thief:
+					case Assassin:
+					case Monk:
 						document.getElementById("DesiredCharClass")[i].disabled = true;
 						setRaceToDisabled = true;
-						alert(i+": "+parseInt(optionSet[i].text)+" = Unallowed");
-					case ClericThief:  
-					case ClericAssassin:  
-					case FighterThief:  
-					case FighterAssassin:  
-					case Cleric:  
-					case ClericFighter:  
+						alert(i+"#: "+parseInt(optionSet[i].text)+"("++parseInt(optionSet[i].value)+") = Unallowed");
+					case ClericThief:
+					case ClericAssassin:
+					case FighterThief:
+					case FighterAssassin:
+					case Cleric:
+					case ClericFighter:
 						document.getElementById("DesiredCharClass")[i].disabled = false;
 						setRaceToDisabled = false;
 						alert(i+": "+parseInt(optionSet[i].text)+" = Allowed");
