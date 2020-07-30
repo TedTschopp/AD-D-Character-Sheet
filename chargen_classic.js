@@ -902,7 +902,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					case Thief:  
 					case Assassin:  
 					case Monk:  
-						/*document.getElementById("DesiredCharClass")[i].disabled = true;*/
+						document.getElementById("DesiredCharClass")[i].disabled = true;
 						setRaceToDisabled = true;
 					case ClericThief:  
 					case ClericAssassin:  
@@ -910,7 +910,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					case FighterAssassin:  
 					case Cleric:  
 					case ClericFighter:  
-						/*document.getElementById("DesiredCharClass")[i].disabled = true;*/
+						document.getElementById("DesiredCharClass")[i].disabled = false;
 						setRaceToDisabled = false;
 					break
 					default:
