@@ -913,7 +913,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					case ClericFighter:  
 						document.getElementById("DesiredCharClass")[i].disabled = false;
 						setRaceToDisabled = false;
-						alert(i+": "+parseInt(optionSet[i].value+" = false")
+						alert(i+": "+parseInt(optionSet[i].value)+" = False");
 					break
 					default:
 					// code block
