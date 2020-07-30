@@ -904,7 +904,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					case Monk:
 						document.getElementById("DesiredCharClass")[i].disabled = true;
 						setRaceToDisabled = true;
-						alert(i+"#: "+parseInt(optionSet[i].text)+"("+parseInt(optionSet[i].value)+") = Unallowed");
+						alert(i+"#: "+optionSet[i].text+"("+parseInt(optionSet[i].value)+") = Unallowed");
 					case ClericThief:
 					case ClericAssassin:
 					case FighterThief:
@@ -913,7 +913,7 @@ fmt = 36, FighterMagicuserThief    = fmt;
 					case ClericFighter:
 						document.getElementById("DesiredCharClass")[i].disabled = false;
 						setRaceToDisabled = false;
-						alert(i+": "+parseInt(optionSet[i].text)+" = Allowed");
+						alert(i+": "+optionSet[i].text+" = Allowed");
 					break
 					default:
 					// code block
